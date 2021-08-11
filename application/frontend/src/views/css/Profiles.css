@@ -1,0 +1,180 @@
+/* ======= GRID LAYOUT ======= */
+.student-grid {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 1000px;
+  margin: 4rem auto 0 auto;
+}
+
+/* Heading */
+.student-heading {
+  margin: 0 atuo 0 auto;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.projects {
+  grid-area: projects;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.education {
+  grid-area: education;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.experience {
+  grid-area: experience;
+  width: 100%;
+}
+
+/* ======= STUDENT HEADER STYLING ======= */
+.student-heading img {
+  object-fit: contain;
+  width: 7rem;
+}
+
+.student-heading .right {
+  margin-left: 2rem;
+}
+
+/* location pin */
+.right img {
+  width: 1.2rem;
+  margin-top: -20px;
+  margin: -20px 0.5rem 0 0;
+}
+
+/* heading buttons */
+.student-heading .right button {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.student-heading #reflection {
+  background-color: #65c2ac !important;
+  color: #2b2b2b !important;
+}
+
+.student-heading #reflection:hover {
+  background-color: #efe271 !important;
+}
+
+/* student links */
+.student-links {
+  width: 400px;
+  margin: 2.5rem auto 0 auto;
+}
+.student-links img {
+  width: 1.75rem;
+}
+
+/* ======= ABOUT & STUDENT QUALITIES STYLING ======= */
+.student-about,
+.student-qualities {
+  width: 90%;
+  max-width: 1000px;
+  margin: 4rem auto 0 auto;
+  text-align: justify;
+}
+
+/* bolds any h4 heading */
+.category-heading {
+  font-weight: 600;
+}
+
+.student-qualities li,
+.right li,
+.rating li {
+  display: flex;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.student-qualities ul,
+.right ul,
+.rating ul {
+  display: flex;
+  margin: 0 1rem 1rem 0;
+  padding: 2px 1rem 2px 1rem;
+  background-color: #eee;
+  border-radius: 5px;
+}
+
+/* ======= STUDENT GRID STYLING ======= */
+.student-grid h4 {
+  font-weight: 600;
+}
+
+.student-grid img {
+  object-fit: contain;
+}
+
+/* Projects */
+.img-box {
+  width: 5rem;
+  height: 5rem;
+  background-color: #eee;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+.img-box img {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #eee;
+}
+
+.right #date {
+  margin-bottom: 0px;
+  font-size: 80%;
+}
+
+/* ======= REFLECTION STYLING ======= */
+.student-reflection {
+  width: 90%;
+  max-width: 1000px;
+  margin: 4rem auto 0 auto;
+}
+
+.student-reflection h4 {
+  margin-bottom: 1rem;
+}
+
+.rating header {
+  justify-content: space-between;
+}
+
+.rating header h5 {
+  margin-right: 1rem;
+  font-weight: 600;
+  font-size: 110%;
+}
+
+.rating header p {
+  font-size: 80%;
+  width: 100%;
+  margin-right: 1rem;
+  text-align: right;
+}
+
+/* Browser Desktop */
+@media (min-width: 800px) {
+  .student-grid {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .projects,
+  .education,
+  .experience {
+    max-width: 500px;
+  }
+}

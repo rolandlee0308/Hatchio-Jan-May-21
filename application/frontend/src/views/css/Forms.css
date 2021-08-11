@@ -1,0 +1,19 @@
+/* ========  GLOBAL STYLING ======== */
+
+/* overwrites bootstrap modal heading */
+#contained-modal-title-vcenter {
+  font-weight: 600;
+  font-size: 125%;
+}
+
+/* ========  DESCRIPTION FORM STYLING ======== */
+#description textarea {
+  min-height: 15rem;
+}
+
+/* ========  HIRE STYLING ======== */
+#gif {
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}

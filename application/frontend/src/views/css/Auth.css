@@ -1,0 +1,182 @@
+.left-auth {
+  min-height: 100vh !important;
+  min-width: 400px;
+  display: none;
+}
+
+.right-auth {
+  min-height: 100vh !important;
+}
+
+.right-auth .navbar {
+  position: absolute !important;
+}
+
+.auth-form,
+.right-auth h1 {
+  width: 400px;
+}
+
+.right-auth .col {
+  padding: 0 !important;
+  margin-top: 5%;
+}
+
+#signin {
+  min-height: 100vh !important;
+}
+
+#signup {
+  min-height: 110vh !important;
+}
+
+.row {
+  flex-direction: column;
+  margin: 5% 0 5% 0px !important;
+}
+
+#h1-signup {
+  text-align: center;
+}
+
+.auth-form #passwd {
+  margin-top: 5%;
+}
+
+.auth-form input {
+  background-color: #eeeeee !important;
+}
+
+.auth-form label {
+  width: 100%;
+  margin: 0 auto 0 auto;
+}
+
+#profiles {
+  margin-bottom: 2%;
+}
+
+#student-radio,
+#professor-radio,
+#company-radio {
+  display: block;
+  margin: 0 auto 0 auto;
+}
+
+/* HIDE RADIO */
+[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* IMAGE STYLES */
+[type="radio"] + #student-radio,
+[type="radio"] + #professor-radio,
+[type="radio"] + #company-radio {
+  cursor: pointer;
+}
+
+#student-radio:hover,
+[type="radio"]:checked + #student-radio {
+  fill: #65c2ac !important;
+}
+
+#professor-radio:hover,
+[type="radio"]:checked + #professor-radio {
+  fill: #efe271 !important;
+}
+
+#company-radio:hover,
+[type="radio"]:checked + #company-radio {
+  fill: #61adcf !important;
+}
+
+/* CHECKED STYLES */
+[type="radio"]:checked + #student-radio,
+[type="radio"]:checked + #professor-radio,
+[type="radio"]:checked + #company-radio {
+  padding: 0;
+  box-shadow: -4px 4px 3px 2px rgba(80, 80, 80, 0.2);
+  border-radius: 10px;
+  border-style: solid;
+  border-radius: 15% !important;
+}
+
+.redirect h1 {
+  font-family: "Fredoka One", cursive;
+  text-align: center;
+  font-size: 200%;
+  margin-top: 10%;
+  padding: 10px;
+}
+
+.redirect h2 {
+  font-size: 150%;
+}
+
+.redirect p {
+  text-align: center;
+}
+
+#redirect-btn {
+  width: 500px;
+  display: block;
+  margin: auto;
+}
+
+.redirect footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.mail-btn {
+  max-width: 400px !important;
+  padding: 20px;
+}
+
+.mail-btn a {
+  color: #fff !important;
+}
+
+.mail-btn a:hover {
+  text-decoration: none !important;
+}
+
+/* Browser Mobile */
+@media (min-width: 1100px) {
+  .left-auth {
+    max-width: 40% !important;
+    height: 100vh !important;
+    padding: 0 !important;
+    object-fit: cover;
+    display: contents;
+    display: block;
+  }
+
+  .auth-form,
+  .right-auth h1 {
+    max-width: 500px;
+  }
+
+  .right-auth .col {
+    padding: 6px 12px !important;
+  }
+
+  .row {
+    flex-direction: row;
+    margin: 0 0 5% -15px !important;
+  }
+
+  #signup {
+    min-height: 100vh !important;
+  }
+
+  #h1-signup {
+    margin-top: none;
+  }
+}
