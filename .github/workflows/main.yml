@@ -34,4 +34,4 @@ jobs:
         run: |
           cd application/backend
           npm install
-          npm run backend
+          npm run backend & npx wait-on http://localhost:5000
