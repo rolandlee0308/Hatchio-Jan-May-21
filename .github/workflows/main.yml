@@ -32,6 +32,6 @@ jobs:
       # Runs a single command using the runners shell
       - name: basic install&build
         run: |
-          cd application/frontend
+          cd application/backend
           npm install
-          npm start
+          npm run backend
